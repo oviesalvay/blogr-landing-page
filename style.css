@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+::selection{
+  color: hsl(13, 100%,72%);
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+overflow-X: hidden;
+font-family: 'overpass', 'ubuntu';
+}
+header{
+  width: 100%;
+    height: 80%;
+    position: relative;
+    background: url('./images/bg-pattern-intro-desktop.svg');
+    background-position: center;
+    background-size:150%;
+    padding: 4rem 2rem;
+    border-bottom-left-radius: 6rem;
+    background-repeat: no-repeat;
+    background-color: hsl(13, 100%,72%);
+}
+header .logo{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+.header-content{
+  color: hsl(0,0%,100%);
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.header-content p{
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+.header-content-links{
+list-style: none;
+margin: 2rem .3rem;
+display: flex;
+justify-content:center;
+align-items: center;
+padding: 1rem;
+}
+.header-content-links li{
+  padding: 1rem;
+}
+
+.header-content-links li .start{
+background:hsl(0,0%,100%);
+color:  hsl(353, 100%, 62%);
+border-radius:4rem;
+padding: .5rem .8rem;
+}
+.header-content-links li .start:hover{
+background-color: hsl(355, 100%, 74%);
+color: white;
+transition: all ease .3s;
+}
+  .header-content-links li .learn{
+    background: transparent;
+    color: white;
+    border-radius: 5rem;
+    padding: .5rem .8rem;
+    border: 1px solid white;
+  }
+  .header-content-links li .learn:hover{
+background: white;
+color: hsl(355, 100%, 74%);
+transition: all ease.3s;
+  }
+ .dropdown{
+   display: inline-block;
+   position: relative;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+ }
+ .dropdown:hover{
+   text-decoration: underline;
+ }
+ .dropdown-options {
+   display: none;
+   position: absolute;
+   overflow: auto;
+  }
+  .dropdown:hover .dropdown-options{
+     display: block;
+  }
+  a{
+     text-decoration: none;
+     font-size: .9rem; 
+     color: white;
+     font-family:ubuntu;
+     font-weight: 700;
+  }
+  a:hover{
+    color: black;
+  }
+  button{
+   background-color: white;
+   padding: 1.4rem 1rem;
+   border: none;
+   margin: 1rem;
+ }
+button a{
+   color:gray;
+ }
+ .ham{
+  display: none;
+ }
+ .btn{
+   padding: .8rem 2.4rem;
+   border-radius: 8rem;
+   background-color: white;
+   color:hsl(13, 100%,72%);
+ } 
+ .btn:hover{
+  background-color: hsl(13, 100%, 72%);
+  color:white;
+  transition: all ease .3s;
+ }
+ .description{
+position: relative;
+width: 100%;
+padding: 0 0 1rem 6rem;
+ }
+  h2{
+  font-size: 2.4rem;
+  text-align:center;
+  color:hsl(237, 23%, 32%); 
+  font-weight: 600;
+  margin: 5rem 3rem;
+ } 
+   .intro{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+  }
+ .description-content{
+  flex-basis: 80%;
+  line-height: 1.8;
+ }
+ .pattern-circles{
+  position: relative;
+ left: 8rem;
+ }
+ h3{
+  font-size: 1.5rem;
+  color:hsl(237, 23%, 32%);
+  margin: 1.3rem 0;
+  font-weight: 600;
+ }
+ .pattern-circles img{
+   width: 100%;  
+ }
+ .illustration-phone {
+   background:url(./images/bg-pattern-circles.svg) no-repeat;
+   border-bottom-left-radius: 6rem;
+   border-top-right-radius: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   line-height: 1.6rem;
+   padding: 0 5rem;
+   position: relative;
+   background-size: 80%;
+   width: 100%;
+   height: 70vh;
+   background-color: hsl(237,17%,21%);
+ }
+ .services{
+   flex-basis: 50%;
+ }
+ .infrastructure{
+  flex-basis: 50%;
+  position: relative;
+  z-index: 1;
+ }
+ .illustration-phone h4{
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-weight: 700;
+ }
+ .features{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem  3rem 6rem 0; 
+  width: 100%;
+  z-index: 2;
+  position: relative;
+ }
+ .illustration-laptop{
+ position: relative;
+ flex-basis: 70%;
+ }
+ .illustration-laptop img{
+  width: 100%;
+  transform: translateX(-35%);
+
+ }
+ .uses{
+  line-height: 1.7;
+  flex-basis: 40%;
+  position: relative;
+ }
+ .features h5{
+  font-size: 1.5rem;
+  color: hsl(237, 17%, 21%);
+  margin: 1rem .1rem
+ }
+ footer{
+  background: hsl(240, 10%,16%);
+  padding: 3rem 5rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+    border-top-right-radius: 6rem;
+    color: white;
+ }
+ footer ul li{
+  list-style: none;
+  margin: .5rem 0;
+ }
+ footer ul li:hover{
+  text-decoration: underline;
+  color: white;
+ }
+footer a:hover{
+  color: white;
+ }
+ .footer-box h6{
+  font-size: 1rem;
+  font-weight: 400;
+ }
+ .attribution{
+  display: flex;
+  align-items: center;
+ }
+ .attribution a{
+  font-size: 1.3rem;
+ }
+ @media screen and (max-width: 1140px){
+  header{
+    background:url('./images/bg-pattern-intro-mobile.svg') no-repeat;
+    background-size: 400%;
+    background-position: center;
+    position: relative;
+    background-color: hsl(13, 100%,72%);
+  }
+ header a, nav p{
+ display: none;
+}
+header.dropdown-options a{
+  display: none;
+}
+header .btn{
+  display: none;
+}
+.header-content-links li{
+  font-size: .8rem;
+  padding:  1rem;
+}
+.ham{
+  display: block; 
+}
+.description{
+  padding: 4rem 2rem;
+}
+.description h2{
+font-size: 1.6rem;
+margin-bottom: 2rem;
+}
+
+.intro{
+  flex-wrap: wrap;
+
+}
+.description-content{
+ position: relative;
+ flex-basis: 100%;
+order: 1;
+text-align: center;
+padding: 2rem 0 8rem 0;
+}
+.pattern-circles {
+  position: relative;
+  width:50%;
+  text-align: center;
+}
+.illustration-phone{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background: url('./images/bg-pattern-circles.svg') no-repeat;
+  background-size: 100%;
+  background-color: hsl(237, 17%, 21%);
+}
+.services img{
+  margin-top: -8rem;
+  width: 140%;
+} 
+.features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .illustration-laptop img {
+  transform: translate(3rem, -2rem);
+ } 
+ .uses{
+  text-align: center;
+  padding: 1rem 0 0 2rem;
+ }
+ 
+ footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .footer-box h6{
+margin: 2rem 0;
+font-weight: 700;
+ }
+ footer li a{
+  font-weight: 300;
+ }
+}
+  
+ 
