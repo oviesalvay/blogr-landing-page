@@ -251,7 +251,7 @@ footer a:hover{
  }
  @media screen and (max-width: 1140px){
   header{
-    background:url('./images/bg-pattern-intro-mobile.svg') no-repeat;
+    background:url(./images/bg-pattern-intro-mobile.svg) no-repeat;
     background-size: 400%;
     background-position: center;
     position: relative;
@@ -294,13 +294,14 @@ padding: 2rem 0 8rem 0;
 }
 .pattern-circles {
   position: relative;
-  width:50%;
+  width:90%;
   text-align: center;
+  transform: translate(-7rem, 0);
 }
 .illustration-phone{
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 85vh;
   background: url('./images/bg-pattern-circles.svg') no-repeat;
   background-size: 100%;
   background-color: hsl(237, 17%, 21%);
@@ -309,6 +310,9 @@ padding: 2rem 0 8rem 0;
   margin-top: -8rem;
   width: 140%;
 } 
+.infrastructure{
+  margin-top: -7rem;
+}
 .features{
   display: flex;
   flex-direction: column;
